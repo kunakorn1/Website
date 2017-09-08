@@ -1,4 +1,4 @@
-var APP_URL = 'https://tnsoelzikknahzt.form.io';
+var APP_URL = 'https://dtsserixszcjdbn.form.io';
 var API_URL = 'https://api.form.io';
 
 // Parse query string
@@ -16,7 +16,8 @@ angular.module('formioAppBasic').constant('AppConfig', {
   forms: {
     userForm: APP_URL + '/user',
     userLoginForm: APP_URL + '/user/login',
-    userRegisterForm: APP_URL + '/user/register'
+    userRegisterForm: APP_URL + '/user/register',
+	substringform: APP_URL + '/substringleft'
   },
   resources: {
     user: {
