@@ -119,7 +119,7 @@ var formdata ={
       "input": true
     },
     {
-      "custom": "var url = 'https://apimanament.azure-api.net/left/left?str=';\n          url += form.submission.data.string;\n          url += '&x=';\n          url += form.submission.data.index;\n          $.ajax({\n            url: url,\n            beforeSend: function(xhrObj){\n              // Request Header\n            },\n            type: \"GET\"\n          }).done(function(data){\n\tform.submission ={ data: {\n        string: form.submission.data.string,\n        index: form.submission.data.index,\n\t\tresult: JSON.stringify(data.result)\n  }\n};\n          }).fail(function(err){\n            console.log(err)\n          });\n        console.log(form.submission);",
+      "custom": "var url = 'https://apimanament.azure-api.net/left/left?str=';\n          url += form.submission.data.string;\n          url += '&x=';\n          url += form.submission.data.index;\n          $.ajax({\n            url: url,\n            beforeSend: function(xhrObj){\n              // Request Header\n            },\n            type: \"GET\"\n          }).done(function(data){\n\tform.submission ={ data: {\n        string: form.submission.data.string,\n        index: form.submission.data.index,\n\t\tresult: JSON.stringify(data.result).replace(/\"/g,'')\n  }\n};\n          }).fail(function(err){\n            console.log(err)\n          });\n        console.log(form.submission);",
       "properties": {
         "": ""
       },
