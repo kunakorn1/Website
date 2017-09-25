@@ -1,181 +1,200 @@
-var formdata ={
-  "_id": "59b0f9ce6d85560007c28250",
-  "machineName": "rafojdfesfcddtg:demoIndex",
-  "modified": "2017-09-13T03:22:56.910Z",
-  "title": "Demo Index",
-  "display": "form",
-  "name": "demoIndex",
-  "path": "demo",
-  "project": "59b0f89b6d85560007c2820a",
-  "created": "2017-09-07T07:48:30.276Z",
-  "components": [
-    {
-      "description": "",
-      "properties": {
-        "": ""
-      },
-      "tags": [],
-      "type": "textfield",
-      "conditional": {
-        "show": "",
-        "when": null,
-        "eq": ""
-      },
-      "validate": {
-        "required": false,
-        "minLength": "",
-        "maxLength": "",
-        "pattern": "",
-        "custom": "",
-        "customPrivate": false
-      },
-      "clearOnHide": true,
-      "hidden": false,
-      "persistent": true,
-      "unique": false,
-      "protected": false,
-      "defaultValue": "",
-      "multiple": false,
-      "suffix": "",
-      "prefix": "",
-      "placeholder": "String",
-      "key": "string",
-      "label": "String",
-      "inputMask": "",
-      "inputType": "text",
-      "tableView": true,
-      "input": true
-    },
-    {
-      "properties": {
-        "": ""
-      },
-      "tags": [],
-      "type": "textfield",
-      "conditional": {
-        "show": "",
-        "when": null,
-        "eq": ""
-      },
-      "validate": {
-        "required": false,
-        "minLength": "",
-        "maxLength": "",
-        "pattern": "",
-        "custom": "",
-        "customPrivate": false
-      },
-      "clearOnHide": true,
-      "hidden": false,
-      "persistent": true,
-      "unique": false,
-      "protected": false,
-      "defaultValue": "",
-      "multiple": false,
-      "suffix": "",
-      "prefix": "",
-      "placeholder": "Index",
-      "key": "index",
-      "label": "Index",
-      "inputMask": "",
-      "inputType": "text",
-      "tableView": true,
-      "input": true
-    },
-    {
-      "properties": {
-        "": ""
-      },
-      "tags": [],
-      "type": "textfield",
-      "conditional": {
-        "show": "",
-        "when": null,
-        "eq": ""
-      },
-      "validate": {
-        "required": false,
-        "minLength": "",
-        "maxLength": "",
-        "pattern": "",
-        "custom": "",
-        "customPrivate": false
-      },
-      "clearOnHide": true,
-      "hidden": false,
-      "persistent": true,
-      "unique": false,
-      "protected": false,
-      "defaultValue": "",
-      "multiple": false,
-      "suffix": "",
-      "prefix": "",
-      "placeholder": "Result",
-      "key": "result",
-      "label": "Result",
-      "inputMask": "",
-      "inputType": "text",
-      "tableView": true,
-      "input": true
-    },
-    {
-      "custom": "var url = 'http://th-api-management.azure-api.net/substring/request/';
-          url += form.submission.data.string;
-          url += '/';
-          url += form.submission.data.index;
-          $.ajax({
-            url: url,
-            beforeSend: function(xhrObj){
-              // Request Header
+var formdata = {
+    "_id": "59b0f9ce6d85560007c28250",
+    "machineName": "rafojdfesfcddtg:demoIndex",
+    "modified": "2017-09-25T07:22:18.051Z",
+    "title": "Demo Index",
+    "display": "form",
+    "name": "demoIndex",
+    "path": "demo",
+    "project": "59b0f89b6d85560007c2820a",
+    "created": "2017-09-07T07:48:30.276Z",
+    "components": [
+        {
+            "description": "",
+            "properties": {
+                "": ""
             },
-            type: 'GET'
-          }).done(function(data){
-	form.submission ={ data: {
-        string: form.submission.data.string,
-        index: form.submission.data.index,
-    result: data.result,
-    number: data.number
-  }
-};
-          }).fail(function(err){
-            console.log(err)
-          });
-        console.log(form.submission);",
-      "properties": {
-        "": ""
-      },
-      "conditional": {
-        "show": "",
-        "when": null,
-        "eq": ""
-      },
-      "tags": [],
-      "type": "button",
-      "theme": "primary",
-      "disableOnInvalid": false,
-      "action": "custom",
-      "block": false,
-      "rightIcon": "",
-      "leftIcon": "",
-      "size": "md",
-      "key": "submit",
-      "tableView": false,
-      "label": "Submit",
-      "input": true
-    }
-  ],
-  "owner": "59b0f49b6d85560007c281e1",
-  "submissionAccess": [],
-  "access": [
-    {
-      "type": "read_all",
-      "roles": [
-        "59b0f89c6d85560007c2820b",
-        "59b0f89c6d85560007c2820c",
-        "59b0f89c6d85560007c2820d"
-      ]
-    }
-  ],
-  "tags": [],
-  "type": "form"
+            "tags": [],
+            "type": "textfield",
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "validate": {
+                "required": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": "",
+                "custom": "",
+                "customPrivate": false
+            },
+            "clearOnHide": true,
+            "hidden": false,
+            "persistent": true,
+            "unique": false,
+            "protected": false,
+            "defaultValue": "",
+            "multiple": false,
+            "suffix": "",
+            "prefix": "",
+            "placeholder": "String",
+            "key": "string",
+            "label": "String",
+            "inputMask": "",
+            "inputType": "text",
+            "tableView": true,
+            "input": true,
+            "isNew": false
+        },
+        {
+            "properties": {
+                "": ""
+            },
+            "tags": [],
+            "type": "textfield",
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "validate": {
+                "required": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": "",
+                "custom": "",
+                "customPrivate": false
+            },
+            "clearOnHide": true,
+            "hidden": false,
+            "persistent": true,
+            "unique": false,
+            "protected": false,
+            "defaultValue": "",
+            "multiple": false,
+            "suffix": "",
+            "prefix": "",
+            "placeholder": "Index",
+            "key": "index",
+            "label": "Index",
+            "inputMask": "",
+            "inputType": "text",
+            "tableView": true,
+            "input": true,
+            "isNew": false
+        },
+        {
+            "isNew": false,
+            "properties": {
+                "": ""
+            },
+            "tags": [],
+            "type": "textfield",
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "validate": {
+                "required": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": "",
+                "custom": "",
+                "customPrivate": false
+            },
+            "clearOnHide": true,
+            "hidden": false,
+            "persistent": true,
+            "unique": false,
+            "protected": false,
+            "defaultValue": "",
+            "multiple": false,
+            "suffix": "",
+            "prefix": "",
+            "placeholder": "Result",
+            "key": "result",
+            "label": "Result",
+            "inputMask": "",
+            "inputType": "text",
+            "tableView": true,
+            "input": true
+        },
+        {
+            "input": true,
+            "tableView": true,
+            "inputType": "text",
+            "inputMask": "",
+            "label": "Number",
+            "key": "number",
+            "placeholder": "Number",
+            "prefix": "",
+            "suffix": "",
+            "multiple": false,
+            "defaultValue": "",
+            "protected": false,
+            "unique": false,
+            "persistent": true,
+            "hidden": false,
+            "clearOnHide": true,
+            "validate": {
+                "required": false,
+                "minLength": "",
+                "maxLength": "",
+                "pattern": "",
+                "custom": "",
+                "customPrivate": false
+            },
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "type": "textfield",
+            "tags": [],
+            "properties": {
+                "": ""
+            },
+            "lockKey": true
+        },
+        {
+            "custom": "var url = 'http://th-api-management.azure-api.net/substring/request/';\n          url += form.submission.data.string;\n          url += '/';\n          url += form.submission.data.index;\n          $.ajax({\n            url: url,\n            beforeSend: function(xhrObj){\n              // Request Header\n            },\n            type: \"GET\"\n          }).done(function(data){\n\tform.submission ={ data: {\n        string: form.submission.data.string,\n        index: form.submission.data.index,\n    result: data.result,\n    number: data.number\n  }\n};\n          }).fail(function(err){\n            console.log(err)\n          });\n        console.log(form.submission);",
+            "properties": {
+                "": ""
+            },
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "tags": [],
+            "type": "button",
+            "theme": "primary",
+            "disableOnInvalid": false,
+            "action": "custom",
+            "block": false,
+            "rightIcon": "",
+            "leftIcon": "",
+            "size": "md",
+            "key": "submit",
+            "tableView": false,
+            "label": "Submit",
+            "input": true
+        }
+    ],
+    "owner": "59b0f49b6d85560007c281e1",
+    "submissionAccess": [],
+    "access": [
+        {
+            "type": "read_all",
+            "roles": [
+                "59b0f89c6d85560007c2820b",
+                "59b0f89c6d85560007c2820c",
+                "59b0f89c6d85560007c2820d"
+            ]
+        }
+    ],
+    "tags": [],
+    "type": "form"
 }
