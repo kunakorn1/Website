@@ -128,7 +128,7 @@ var formdata ={
             beforeSend: function(xhrObj){
               // Request Header
             },
-            type: "GET"
+            type: 'GET'
           }).done(function(data){
 	form.submission ={ data: {
         string: form.submission.data.string,
